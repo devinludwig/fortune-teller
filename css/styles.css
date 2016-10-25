@@ -2,6 +2,16 @@ h1  {
   text-align: center;
 }
 
-#lucky, #unlucky, #neutral {
+#results, #lucky, #unlucky, #neutral {
   display: none;
+}
+
+.jumbotron {
+  background-image: url(../img/fortune-teller.png);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  line-height: 200px;
 }

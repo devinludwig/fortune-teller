@@ -14,9 +14,7 @@ $(document).ready(function() {
 
     });
     var unluckyTotal = unluckyArray.length;
-    alert(unluckyTotal);
     var luckyTotal = luckyArray.length;
-    alert(luckyTotal);
 
     if(unluckyTotal > luckyTotal) {
       $("#unlucky").show();
@@ -25,5 +23,10 @@ $(document).ready(function() {
     } else {
       $("#lucky").show();
     }
+    $("#results").show();
+    $("form").hide();
+  });
+  $("#results button").click(function(){
+    location.reload();
   });
 });

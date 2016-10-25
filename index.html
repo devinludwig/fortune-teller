@@ -9,42 +9,47 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="jumbotron">Take the Fortune Teller Quiz to get some advice</h1>
-      <form>
-        <div class="form-group">
-          <label for="unlucky">Check all the unlucky events that have taken place in your life lately:
-          </label><br>
-          <input type="checkbox" name="unlucky" value="blackcat"> A black cat crossed your path<br>
-          <input type="checkbox" name="unlucky" value="mirror"> You broke a mirror<br>
-          <input type="checkbox" name="unlucky" value="ladder"> You walked under a ladder<br>
-          <input type="checkbox" name="unlucky" value="grave"> You stepped on a grave<br>
-          <input type="checkbox" name="unlucky" value="umbrella"> You opened an umbrella indoors<br>
-          <input type="checkbox" name="unlucky" value="salt"> You spilled some salt<br>
+    <h1 class="jumbotron">Take the Fortune Teller Quiz</h1>
+    <div class="well">
+        <form>
+          <div class="form-group">
+            <label for="unlucky">Check all the unlucky events that have taken place in your life lately:
+            </label><br>
+            <input type="checkbox" name="unlucky" value="blackcat"> A black cat crossed your path<br>
+            <input type="checkbox" name="unlucky" value="mirror"> You broke a mirror<br>
+            <input type="checkbox" name="unlucky" value="ladder"> You walked under a ladder<br>
+            <input type="checkbox" name="unlucky" value="grave"> You stepped on a grave<br>
+            <input type="checkbox" name="unlucky" value="umbrella"> You opened an umbrella indoors<br>
+            <input type="checkbox" name="unlucky" value="salt"> You spilled some salt<br>
+          </div>
+          <div class="form-group">
+            <label for="lucky">Check all the lucky events that have taken place in your life lately:
+            </label><br>
+            <input type="checkbox" name="lucky" value="clover"> Found a four leaf clover<br>
+            <input type="checkbox" name="lucky" value="rainbow"> Saw a double rainbow<br>
+            <input type="checkbox" name="lucky" value="star"> Saw a shooting star<br>
+            <input type="checkbox" name="lucky" value="butterfly"> A butterfly entered your house<br>
+            <input type="checkbox" name="lucky" value="penny"> Found a penny from your birth year<br>
+            <input type="checkbox" name="lucky" value="rain"> It rained while the sun was shining<br>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit!</button>
+        </form><br>
+      </div><!--end of well-->
+      <div class="container well" id="results">
+        <div id="lucky">
+          <p>You have a bright shiny future ahead of you. I predict success in love and life for many happy years.
+          </p>
         </div>
-        <div class="form-group">
-          <label for="lucky">Check all the lucky events that have taken place in your life lately:
-          </label><br>
-          <input type="checkbox" name="lucky" value="clover"> Found a four leaf clover<br>
-          <input type="checkbox" name="lucky" value="rainbow"> Saw a double rainbow<br>
-          <input type="checkbox" name="lucky" value="star"> Saw a shooting star<br>
-          <input type="checkbox" name="lucky" value="butterfly"> A butterfly entered your house<br>
-          <input type="checkbox" name="lucky" value="penny"> Found a penny from your birth year<br>
-          <input type="checkbox" name="lucky" value="rain"> It rained while the sun was shining<br>
+        <div id="unlucky">
+          <p>You're unlucky. Sorry about that.
+          </p>
         </div>
-        <button type="submit" class="btn btn-primary">Submit!</button>
-      </form><br>
-      <div id="lucky">
-        <p>You have a bright shiny future ahead of you. I predict success in love and life for many happy years.
-        </p>
-      </div>
-      <div id="unlucky">
-        <p>You're unlucky. Sorry about that.
-        </p>
-      </div>
-      <div id="neutral">
-        <p>Luck will not factor into your outcomes.
-        </p>
-      </div>
-    </div>
+        <div id="neutral">
+          <p>Luck will not factor into your outcomes.
+          </p>
+        </div>
+        <button type="submit" class="btn btn-success">Take the quiz again!</button>
+      </div><!--end of well-->
+    </div><!--end of container-->
   </body>
 </html>
