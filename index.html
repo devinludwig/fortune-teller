@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="jumbotron">Take the Fortune Teller Quiz to get some advice</h1>
+      <form>
+        <div class="form-group">
+          <label for="unlucky">Check all the unlucky events that have taken place in your life lately:
+          </label><br>
+          <input type="checkbox" name="unlucky" value="blackcat"> A black cat crossed your path<br>
+          <input type="checkbox" name="unlucky" value="mirror"> You broke a mirror<br>
+          <input type="checkbox" name="unlucky" value="ladder"> You walked under a ladder<br>
+          <input type="checkbox" name="unlucky" value="grave"> You stepped on a grave<br>
+          <input type="checkbox" name="unlucky" value="umbrella"> You opened an umbrella indoors<br>
+          <input type="checkbox" name="unlucky" value="salt"> You spilled some salt<br>
+        </div>
+        <div class="form-group">
+          <label for="lucky">Check all the lucky events that have taken place in your life lately:
+          </label><br>
+          <input type="checkbox" name="lucky" value="clover"> Found a four leaf clover<br>
+          <input type="checkbox" name="lucky" value="rainbow"> Saw a double rainbow<br>
+          <input type="checkbox" name="lucky" value="star"> Saw a shooting star<br>
+          <input type="checkbox" name="lucky" value="butterfly"> A butterfly entered your house<br>
+          <input type="checkbox" name="lucky" value="penny"> Found a penny from your birth year<br>
+          <input type="checkbox" name="lucky" value="rain"> It rained while the sun was shining<br>
+        </div>
+      </form>
+      <div id="lucky">
+        <p>You have a bright shiny future ahead of you. I predict success in love and life for many happy years.
+        </p>
+      </div>
+      <div id="unlucky">
+        <p>You're unlucky. Sorry about that.
+        </p>
+      </div>
+      <div id="neutral">
+        <p>Luck will not factor into your outcomes.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
